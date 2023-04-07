@@ -1,0 +1,39 @@
+.header {
+  height: 40px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  .logo {
+    height: 20px;
+    position: absolute;
+    left: 50px;
+  }
+
+  .btn{
+    right: 80px;
+    position:absolute;
+    display: flex;
+    height: 20px;
+
+    .gh{
+      margin-right: 15px;
+      border: none;
+      background-color:white;
+      cursor: pointer;
+    }
+
+    .ig{
+      margin-left: 15px;
+      border: none;
+      background-color:white;
+      cursor: pointer;
+    }
+
+  }
+}
+
+

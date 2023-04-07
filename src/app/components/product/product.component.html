@@ -1,0 +1,11 @@
+<div class="product">
+  <h4>{{ products.id }}. {{ products.title }}</h4>
+  <img [src]="products.thumbnail" alt="product.title" />
+  <div class="prodAbout">
+    <span>Price: {{ products.price }}</span>
+    <span>DiscountPercentage: {{ products.discountPercentage }}</span>
+    <span>Rating:{{ products.rating }}</span>
+    <span>Brand:{{ products.brand }}</span>
+    <span>Category: {{ products.category }}</span>
+  </div>
+</div>
