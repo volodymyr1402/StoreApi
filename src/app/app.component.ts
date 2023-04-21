@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from './models/product';
 // import { products as data } from './products/products';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { ProductsService } from './services/products.service';
 
 @Component({
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit  {
 constructor(private productsService : ProductsService) {}
 
 ngOnInit():void {
-  this.products$ = this.productsService.getAll()
+  this.products$ = this.productsService.getAll().pipe(tap(console.log));
 
 }
 

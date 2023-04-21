@@ -8,6 +8,9 @@ import { IProduct } from 'src/app/models/product';
 })
 export class ProductComponent {
 
-  @Input() products: IProduct
+  prodAbout = false;
 
+  @Input() products:IProduct
+
+ 
 }

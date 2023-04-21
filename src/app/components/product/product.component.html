@@ -1,7 +1,9 @@
 <div class="product">
   <h4>{{ products.id }}. {{ products.title }}</h4>
-  <img [src]="products.thumbnail" alt="product.title" />
-  <div class="prodAbout">
+  <img [src]="products.images[0]" alt="product.title" />
+  <button (click)="prodAbout = !prodAbout">
+    <span>{{prodAbout? "Hide":"Show"}}</span>  Details</button>
+  <div *ngIf="prodAbout"  class="prodAbout">
     <span>Price: {{ products.price }}</span>
     <span>DiscountPercentage: {{ products.discountPercentage }}</span>
     <span>Rating:{{ products.rating }}</span>
