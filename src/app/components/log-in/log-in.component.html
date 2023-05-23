@@ -1,0 +1,23 @@
+<div class="windowLogin">
+  <div class="closeWindow" (click)="modalService.close()">&times;</div>
+  <h2>Я вже зареєстрований(-лась)</h2>
+  <h4>Заповніть подробну форму :</h4>
+  <form class="fillFields" [formGroup]="form" (ngSubmit)="submit()">
+    <input
+      class="inputFields"
+      type="text"
+      placeholder="Введіть Ваше Ім'я "
+      formControlName="username"
+    />
+    <input
+      class="inputFields"
+      type="text"
+      placeholder="Введіть пароль"
+      formControlName="password"
+    />
+    <button
+    class="btnEnter"
+    type="submit"
+    (click)="submit()">Далі</button>
+  </form>
+</div>

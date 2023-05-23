@@ -1,11 +1,18 @@
 <div class="header">
   <img class="logo" src="https://www.fakeshop-api.com/static/media/logo.24f10020.png" alt="">
+
   <div class="btn">
   <button class="gh" (click)="linkGit()">GitHub</button>
   <span> | </span>
   <button class="ig" (click)="linkIg()"> Instagram </button>
+  <span> | </span>
+  <button class="btnLogIn" (click)="modalService.open()"> Власний кабінет </button>
   </div>
 </div>
 
 <app-product *ngFor="let product of products$ |async" [products]="product"></app-product>
+
+<app-modal *ngIf="modalService.isVisible$ | async">
+  <app-log-in></app-log-in>
+</app-modal>
 

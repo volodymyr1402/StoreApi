@@ -1,0 +1,44 @@
+.windowLogin{
+  width: 350px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+  top: 150px;
+  left: 40%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+
+  .fillFields{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputFields{
+    width: 250px;
+    height: 15px;
+    margin: 15px auto;
+    right: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  .btnEnter{
+    width: 150px;
+    height: 30px;
+    margin: 25px 100px;
+    background-color: coral;
+    border-radius: 5px;
+  }
+
+  H2,H4 {
+    text-align: center;
+  }
+
+  .closeWindow{
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+  }
+}

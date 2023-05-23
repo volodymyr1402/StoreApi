@@ -19,11 +19,14 @@
     display: flex;
     height: 20px;
 
+
     .gh{
       margin-right: 15px;
       border: none;
       background-color:white;
       cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid black;}
     }
 
     .ig{
@@ -31,8 +34,18 @@
       border: none;
       background-color:white;
       cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid black;}
     }
 
+    .btnLogIn{
+      margin-left: 15px;
+      border: none;
+      background-color:white;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid black;}
+    }
   }
 }
 
