@@ -14,6 +14,7 @@ import { ModalService } from './services/modal.service';
 export class AppComponent implements OnInit  {
   title = 'storeApi';
   linkLogIn = false;
+  inputSearch = '';
   urlGh='https://github.com/'
   urlIg='https://www.instagram.com/'
 

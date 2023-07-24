@@ -7,20 +7,24 @@ import { ProductComponent } from './components/product/product.component';
 import {HttpClientModule} from '@angular/common/http';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { ModalComponent } from './components/modal/modal.component'
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchingProductsPipe } from './pipes/searching-products.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     LogInComponent,
-    ModalComponent
+    ModalComponent,
+    SearchingProductsPipe
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [],
