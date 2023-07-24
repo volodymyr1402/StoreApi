@@ -9,6 +9,8 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { ModalComponent } from './components/modal/modal.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchingProductsPipe } from './pipes/searching-products.pipe';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SearchingProductsPipe } from './pipes/searching-products.pipe';
     ProductComponent,
     LogInComponent,
     ModalComponent,
-    SearchingProductsPipe
+    SearchingProductsPipe,
+    ProductPageComponent,
+    AboutPageComponent
 
   ],
   imports: [

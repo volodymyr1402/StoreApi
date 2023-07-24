@@ -1,14 +1,8 @@
-.prodAbout{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
 
 .product{
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   align-items:center;
 
 }
@@ -24,4 +18,12 @@
   &:hover {
     border-bottom: 1px solid black;};
 
+}
+
+.prodAbout{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  margin: 20px 20px;
 }
