@@ -16,14 +16,15 @@
   cursor: pointer;
 
   &:hover {
-    border-bottom: 1px solid black;};
+    border: 1px solid black;
+  border-radius: 5%;
+  background-color: lightsteelblue;
+  };
 
 }
 
 .prodAbout{
   display: flex;
   flex-direction: column;
-  width: 150px;
-  height: 150px;
   margin: 20px 20px;
 }

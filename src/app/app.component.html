@@ -1,3 +1,37 @@
-<div>
-  <router-outlet></router-outlet>
+<div class="header">
+  <img
+    class="logo"
+    src="https://www.fakeshop-api.com/static/media/logo.24f10020.png"
+    alt=""
+  />
+
+  <div class="inputSearch">
+    <input
+      class="textSearch"
+      type="text"
+      placeholder="Search product..."
+      [(ngModel)]="inputSearch"
+    />
+    <button class="SearchBtn" type="submit">Searching</button>
+  </div>
+
+  <div class="btn">
+    <button class="gh" (click)="linkGit()">GitHub</button>
+    <span> | </span>
+    <button class="ig" (click)="linkIg()">Instagram</button>
+    <span> | </span>
+    <button class="btnLogIn" (click)="modalService.open()">
+      Власний кабінет
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div>
+    <app-navigation></app-navigation>
+  </div>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>

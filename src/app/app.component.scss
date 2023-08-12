@@ -1,0 +1,88 @@
+.header {
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 3;
+
+  .logo {
+    height: 20px;
+    margin-left: 5%;
+  }
+
+  .inputSearch {
+    margin-left: 22%;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+
+
+    .textSearch{
+      width: 99%;
+      border: none;
+
+}
+    .SearchBtn {
+      position: absolute;
+      right: 0;
+      border: none;
+      background-color:aqua;
+      height: 100%;
+      cursor: pointer;
+      border-left: 1px solid black;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    margin-left: 83%;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+
+    .gh {
+      margin-right: 15px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+
+    .ig {
+      margin-left: 15px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+
+    .btnLogIn {
+      margin-left: 15px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+.body {
+    display: flex;
+    position: relative;
+    margin-top: 17px;
+}
+
+

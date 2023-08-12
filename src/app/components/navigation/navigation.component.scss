@@ -1,0 +1,11 @@
+.navigation {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  z-index: 3;
+  margin-top: 25px;
+  padding-top: 5px;
+}

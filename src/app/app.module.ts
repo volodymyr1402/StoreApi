@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchingProductsPipe } from './pipes/searching-products.pipe';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     ModalComponent,
     SearchingProductsPipe,
     ProductPageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    NavigationComponent
 
   ],
   imports: [
