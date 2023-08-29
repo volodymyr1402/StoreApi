@@ -1,9 +1,35 @@
 
+.inputSearch {
+  margin: 50px 750px;
+  width: 600px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+
+
+  .textSearch{
+    width: 85%;
+    border: none;
+    margin: 5px 10px;
+    outline: none;
+
+}
+  .SearchBtn {
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: lightsteelblue;
+    height: 100%;
+    cursor: pointer;
+    border-left: 1px solid black;
+  }
+}
   .products {
     position: absolute;
     justify-content: center;
     left: 40%;
-    margin-top: 20px;
+    margin-top: 40px;
     z-index: 1;
   }
 

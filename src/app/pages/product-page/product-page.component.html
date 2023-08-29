@@ -1,9 +1,17 @@
+<div class="inputSearch">
+  <input
+    class="textSearch"
+    type="text"
+    placeholder="Search product ..."
+    [(ngModel)]="inputSearch"
+  />
+  <button class="SearchBtn" type="submit">Searching</button>
+</div>
+
 
 <div class="products">
-  <span *ngFor="let product of products$ | async as productSearch">
-    <app-product
-      *ngFor="let product of productSearch | searchingProducts : inputSearch"
-      [products]="product"
+  <span *ngIf=" products$ | async as productSearch">
+    <app-product *ngFor="let product of productSearch | searchingProducts : inputSearch" [products]="product"
     ></app-product>
 
     <app-modal *ngIf="modalService.isVisible$ | async">

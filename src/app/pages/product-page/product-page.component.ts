@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from 'src/app/models/product';
-// import { products as data } from './products/products';
 import { Observable, from, tap } from 'rxjs';
 import { ProductsService} from 'src/app/services/products.service';
 import { ModalService } from 'src/app/services/modal.service';
+
 
 
 @Component({
@@ -26,12 +26,14 @@ export class ProductPageComponent {
 
 
 constructor(private productsService : ProductsService,
-  public modalService:ModalService) {}
+  public modalService:ModalService,
+  ) {}
 
 
 
 ngOnInit():void {
   this.products$ = this.productsService.getAll().pipe(tap(console.log));
+
 }
 
 
