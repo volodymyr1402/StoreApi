@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from './services/modal.service';
-import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { Title } from '@angular/platform-browser'
+
 
 
 @Component({
@@ -8,13 +9,13 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent   {
+export class AppComponent  implements OnInit {
 
   inputSearch = '';
   urlGh='https://github.com/'
   urlIg='https://www.instagram.com/'
 
-constructor(public modalService:ModalService){}
+constructor(public modalService:ModalService,private title:Title){}
 
 linkGit(){
   location.href=this.urlGh;
@@ -23,4 +24,7 @@ linkIg(){
   location.href=this.urlIg;
 }
 
+ngOnInit(): void {
+  this.title.setTitle("Whatsaaaapppp")
+}
 }

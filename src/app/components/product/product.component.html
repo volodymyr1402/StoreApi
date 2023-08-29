@@ -1,13 +1,28 @@
 <div class="product">
-  <h4>{{ products.id }}. {{ products.title }}</h4>
+  <h4>{{ products.title }}</h4>
   <img [src]="products.images[0]" alt="product.title" />
+
   <button class="btnProducts" (click)="prodAbout = !prodAbout">
-    <span>{{prodAbout? "Hide":"Show"}}</span>  Details</button>
-  <div *ngIf="prodAbout"  class="prodAbout">
+    <span [ngStyle]="{ 'font-weight': 'bold' }"
+      >{{ prodAbout ? "Hide" : "Show" }} Details
+    </span>
+  </button>
+
+  <div *ngIf="prodAbout" class="prodAbout">
     <span>Price: {{ products.price | currency }}</span>
+    <span>{{ products.description }}</span>
     <span>DiscountPercentage: {{ products.discountPercentage }} %</span>
     <span>Rating:{{ products.rating }}</span>
     <span>Brand:{{ products.brand }}</span>
     <span>Category: {{ products.category }}</span>
+
+    <div class="images">
+      <img class="image"
+
+        *ngFor="let image of products.images; let i = index"
+        [src]="image"
+        alt="product.title"
+      />
+    </div>
   </div>
 </div>

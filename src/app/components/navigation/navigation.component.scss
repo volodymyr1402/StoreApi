@@ -6,6 +6,24 @@
   flex-direction: column;
   border-right: 1px solid black;
   z-index: 3;
-  margin-top: 25px;
+  margin-top: 35px;
   padding-top: 5px;
+  background-color: rgb(230, 227, 227);
+
+  a {
+    text-decoration:none;
+    border-bottom: 2px solid transparent;
+    color: rgb(49, 12, 12);
+    cursor: pointer;
+    margin-top: 7px;
+
+  }
+
+      a:hover {
+        border-bottom: 2px dotted rgb(14, 88, 107);
+        width: fit-content;
+
+      }
+
 }
+

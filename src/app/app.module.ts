@@ -12,6 +12,13 @@ import { SearchingProductsPipe } from './pipes/searching-products.pipe';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { SmartphonesComponent } from './pages/smartphones/smartphones.component';
+import { CategoryProductsPipe } from './pipes/category-products.pipe';
+import { LaptopsComponent } from './pages/laptops/laptops.component';
+import { FragrancesComponent } from './pages/fragrances/fragrances.component';
+import { SkincareComponent } from './pages/skincare/skincare.component';
+import { GroceriesComponent } from './pages/groceries/groceries.component';
+import { HomeDecorationComponent } from './pages/home-decoration/home-decoration.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +29,14 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     SearchingProductsPipe,
     ProductPageComponent,
     AboutPageComponent,
-    NavigationComponent
+    NavigationComponent,
+    SmartphonesComponent,
+    CategoryProductsPipe,
+    LaptopsComponent,
+    FragrancesComponent,
+    SkincareComponent,
+    GroceriesComponent,
+    HomeDecorationComponent
 
   ],
   imports: [
