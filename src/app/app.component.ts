@@ -25,6 +25,6 @@ linkIg(){
 }
 
 ngOnInit(): void {
-  this.title.setTitle("Whatsaaaapppp")
+  this.title.setTitle("Your new store")
 }
 }
